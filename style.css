@@ -1,0 +1,75 @@
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  background-color: goldenrod;
+  padding: 12px;
+  margin: 9px;
+}
+
+select {
+  appearance: none;
+  outline: black;
+  background-color: gold;
+  padding: 12px;
+  margin: 3px;
+  font-weight: bold;
+  border-radius: 9px;
+  cursor: pointer;
+  color: black;
+}
+
+/* End GLobal Styles */
+
+.main-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-container {
+  padding: 12px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: bisque;
+}
+
+.curr_time {
+  font-size: 51px;
+  color: black;
+}
+
+.alarm-form {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.submit-button {
+  border-color: black;
+  border: 9px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.set-alarm-container {
+  width: 100%;
+}
+
+.alarm {
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* style of screen size less than 600px */
+@media only screen and (min-width: 600px) {
+  .clock-container {
+    justify-content: center;
+    border-radius: 25px;
+    width: 400px;
+    min-height: auto;
+  }
+}
