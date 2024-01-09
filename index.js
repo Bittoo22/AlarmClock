@@ -61,10 +61,9 @@ function convertToTime(hour, minute, second, amPm) {
 function setAlarm(time, fetching = false) {
    const alarm = setInterval(() => {
       if (time === getcurrTime()) {
-         alert("Alarm Ringing");
+         alert("Alarm Executed on :" + time);
       }
-      console.log("running");
-   }, 500);
+   }, 333);
 
    addAlaramToDom(time, alarm);
    if (!fetching) {
